@@ -1,0 +1,25 @@
+<div class="container">
+    <h4>Lista Editorial</h4>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let lista of services.list">
+                <td>{{lista.id}}</td>
+                <td>{{lista.nombre}}</td>
+                <td>
+                    <i class="far fa-edit fa-lg text-info" style="margin-right: 4px ;" (click)="editar(lista)"></i>
+                    <i class="fa fa-trash-alt fa-lg text-danger" (click)="eliminar(lista.id!)"></i>
+                </td>
+              
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+

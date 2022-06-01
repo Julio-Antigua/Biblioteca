@@ -1,0 +1,15 @@
+<div class="container">
+    <h4>Cantidad Editorial</h4>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Cantidad Libros</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let lista of services.cantidad">
+                <td>{{lista}}</td>
+            </tr>         
+        </tbody>
+    </table>
+</div>
